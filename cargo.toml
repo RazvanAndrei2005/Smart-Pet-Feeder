@@ -21,7 +21,15 @@ embedded-graphics = "0.8.1"
 hx711 = "0.7.0"
 nb = "1.0"
 
-# --- NEW DEPENDENCIES FOR RTC AND SD CARD ---
 ds323x = "0.6.0"
 embedded-sdmmc = "0.8.0"
 embedded-hal-bus = "0.2.0"
+
+aligned = "0.4"
+embassy-net = { version = "0.9.1", features = ["tcp", "proto-ipv4", "dhcpv4", "medium-ethernet"] }
+cyw43 = { version = "0.7.0", features = ["firmware-logs"] }
+cyw43-pio = { version = "0.10.0" }
+embassy-sync = { version = "0.8.0" }
+static_cell = "2.1.0"
+embedded-io-async = "0.7.0"
+
